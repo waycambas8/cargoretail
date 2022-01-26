@@ -1,1 +1,9 @@
-<h2>Halaman Dashboard</h2>
+@extends("layouts.master")
+
+@section("content")
+
+@endsection
+
+@section("script")
+
+@endsection

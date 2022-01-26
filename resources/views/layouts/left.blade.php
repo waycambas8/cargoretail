@@ -24,7 +24,7 @@
           </li>
           <li class="user-footer">
             <a href="#" class="btn btn-default btn-flat">Profile</a>
-            <a href="{{route('logout')}}" class="btn btn-default btn-flat float-right">Sign out</a>
+            <a href="" class="btn btn-default btn-flat float-right">Sign out</a>
           </li>
         </ul>
       </li>
@@ -33,7 +33,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <a href="index3.html" class="brand-link">
       <img src="{{asset('dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Tools Oprational</span>
+      <span class="brand-text font-weight-light">Aplikasi Agen</span>
     </a>
 
     <div class="sidebar">
@@ -54,6 +54,54 @@
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Dasboard
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{URL('/')}}" class="nav-link">
+              <i class="nav-icon fas fa-shopping-cart"></i>
+              <p>
+                Order
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{URL('/')}}" class="nav-link">
+              <i class="nav-icon fas fa-truck-loading"></i>
+              <p>
+                Manifest
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{URL('/')}}" class="nav-link">
+              <i class="nav-icon fas fa-comments-dollar"></i>
+              <p>
+                Finance
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{URL('/')}}" class="nav-link">
+              <i class="nav-icon fas fa-ticket-alt"></i>
+              <p>
+                Ticket
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{URL('/')}}" class="nav-link">
+              <i class="nav-icon fas fa-file-excel"></i>
+              <p>
+                Report
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{URL('/')}}" class="nav-link dashboard">
+              <i class="nav-icon fas fa-database"></i>
+              <p>
+                Data Master
               </p>
             </a>
           </li>
