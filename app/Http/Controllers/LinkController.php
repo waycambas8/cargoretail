@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class LinkController extends Controller
 {
     public function dashboard(){
-        echo "testing";
+        $name = "dashboard";
+        $this->parent(($name));
     }
 
     public function parent($name){
