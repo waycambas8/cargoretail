@@ -32,7 +32,6 @@
       <img src="{{asset('dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Aplikasi Agen</span>
     </a>
-
     <div class="sidebar">
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
@@ -42,20 +41,18 @@
           <a href="#" class="d-block"></a>
         </div>
       </div>
-
-     
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
           <li class="nav-item">
             <a href="{{URL('/dashboard')}}" class="nav-link dashboard">
               <i class="nav-icon fas fa-home"></i>
               <p>
-                Dasboard
+                Dashboard
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/order-view')}}" class="nav-link">
+            <a href="{{URL('/order-view')}}" class="nav-link order">
               <i class="nav-icon fas fa-shopping-cart"></i>
               <p>
                 Order
@@ -63,7 +60,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/manifest-view')}}" class="nav-link">
+            <a href="{{URL('/manifest-view')}}" class="nav-link manifest">
               <i class="nav-icon fas fa-truck-loading"></i>
               <p>
                 Manifest
@@ -71,7 +68,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/finance-view')}}" class="nav-link">
+            <a href="{{URL('/finance-view')}}" class="nav-link finance">
               <i class="nav-icon fas fa-comments-dollar"></i>
               <p>
                 Finance
@@ -79,7 +76,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/ticket-view')}}" class="nav-link">
+            <a href="{{URL('/ticket-view')}}" class="nav-link ticket">
               <i class="nav-icon fas fa-ticket-alt"></i>
               <p>
                 Ticket
@@ -87,7 +84,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/report-view')}}" class="nav-link">
+            <a href="{{URL('/report-view')}}" class="nav-link report">
               <i class="nav-icon fas fa-file-excel"></i>
               <p>
                 Report
@@ -95,7 +92,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/datamaster-view')}}" class="nav-link dashboard">
+            <a href="{{URL('/datamaster-view')}}" class="nav-link datamaster">
               <i class="nav-icon fas fa-database"></i>
               <p>
                 Data Master
@@ -109,10 +106,6 @@
 
 
 <script type="text/javascript">
-
-  $("document").ready(function(){
-    
-  });
- 
-
+      var parents = "<?=(!empty($res['modul'])&&$res['modul'])?$res['modul']:'dashboard'?>";
+      $( "."+parents ).addClass( "active" ); 
 </script>
