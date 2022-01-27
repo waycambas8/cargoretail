@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="_token" content="{{ csrf_token() }}">
 
-<title>Tool Operational</title>
+<title>Aplikasi Agen Cargomurah</title>
 <!-- Google Font: Source Sans Pro -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 <!-- Font Awesome -->
@@ -24,16 +24,13 @@
 <!-- summernote -->
 <link rel="stylesheet" href="{{asset('plugins/summernote/summernote-bs4.min.css')}}">
 <!-- Toast -->
-
 <link rel="stylesheet" href="{{asset('plugins/select2/css/select2.min.cs')}}s">
 <link rel="stylesheet" href="{{asset('plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css')}}">
- <link rel="stylesheet" href="{{asset('plugins/daterangepicker/daterangepicker.css')}}">
+<link rel="stylesheet" href="{{asset('plugins/daterangepicker/daterangepicker.css')}}">
 
 <!-- Datatables -->
-
 <link rel="stylesheet" href="{{asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
 <link rel="stylesheet" href="{{asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
 <link rel="stylesheet" href="{{asset('plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
 <link rel="stylesheet" href="{{asset('editor/codemirror/lib/codemirror.css')}}">
-
 @include("layouts.cdn")

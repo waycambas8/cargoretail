@@ -17,10 +17,7 @@
           <!-- User image -->
           <li class="user-header bg-primary">
             <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
-
-            <p>
-              
-            </p>
+            <p>Nama Agen</p>
           </li>
           <li class="user-footer">
             <a href="#" class="btn btn-default btn-flat">Profile</a>
@@ -50,7 +47,7 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
           <li class="nav-item">
-            <a href="{{URL('/')}}" class="nav-link dashboard">
+            <a href="{{URL('/dashboard')}}" class="nav-link dashboard">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Dasboard
@@ -58,7 +55,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/')}}" class="nav-link">
+            <a href="{{URL('/order-view')}}" class="nav-link">
               <i class="nav-icon fas fa-shopping-cart"></i>
               <p>
                 Order
@@ -66,7 +63,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/')}}" class="nav-link">
+            <a href="{{URL('/manifest-view')}}" class="nav-link">
               <i class="nav-icon fas fa-truck-loading"></i>
               <p>
                 Manifest
@@ -74,7 +71,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/')}}" class="nav-link">
+            <a href="{{URL('/finance-view')}}" class="nav-link">
               <i class="nav-icon fas fa-comments-dollar"></i>
               <p>
                 Finance
@@ -82,7 +79,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/')}}" class="nav-link">
+            <a href="{{URL('/ticket-view')}}" class="nav-link">
               <i class="nav-icon fas fa-ticket-alt"></i>
               <p>
                 Ticket
@@ -90,7 +87,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/')}}" class="nav-link">
+            <a href="{{URL('/report-view')}}" class="nav-link">
               <i class="nav-icon fas fa-file-excel"></i>
               <p>
                 Report
@@ -98,7 +95,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL('/')}}" class="nav-link dashboard">
+            <a href="{{URL('/datamaster-view')}}" class="nav-link dashboard">
               <i class="nav-icon fas fa-database"></i>
               <p>
                 Data Master
