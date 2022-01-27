@@ -8,7 +8,7 @@ class LinkController extends Controller
 {
     public function dashboard(){
         $name = "dashboard";
-        $this->parent(($name));
+        return redirect()->route("/dashboard");
     }
 
     public function parent($name){
