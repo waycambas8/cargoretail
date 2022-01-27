@@ -7,8 +7,10 @@ use Illuminate\Http\Request;
 class LinkController extends Controller
 {
     public function dashboard(){
-        $name = "dashboard";
-        return redirect()->route("/dashboard");
+        $res['modul'] = "dashboard";
+        $res['url'] = $res['modul'];
+        $path = "modul.".$res['modul'].".".$res['modul'];
+        return view($path)->with(compact("res"));
     }
 
     public function parent($name){

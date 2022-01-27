@@ -5,7 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LinkController;
 
 
-Route::get("/",[DashboardController::class,"dashboard"])->name("dashboard");
+Route::get("/",[LinkController::class,"dashboard"]);
 
 //order
 Route::get("/{name}",[LinkController::class,"parent"]);
